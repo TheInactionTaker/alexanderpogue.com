@@ -33,8 +33,14 @@ header {
     padding: 18px 24px;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 1rem;
 }
 
 .site-title {
@@ -106,6 +112,17 @@ nav a {
 
 nav a:hover {
     opacity: 0.6;
+}
+
+.signature-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.signature-logo img {
+    height: 40px;
+    width: auto;
 }
 
 /* -------------------------------------------------------
