@@ -48,6 +48,23 @@ header {
     text-transform: uppercase;
 }
 
+.site-title a {
+    text-decoration: none;
+    color: #000;
+    -webkit-text-stroke: 1px white;
+    paint-order: stroke fill;
+    /* Fallback outline using text-shadow for better browser support */
+    text-shadow: 
+        -0.5px -0.5px 0 white,
+        0.5px -0.5px 0 white,
+        -0.5px 0.5px 0 white,
+        0.5px 0.5px 0 white,
+        -0.5px 0 0 white,
+        0.5px 0 0 white,
+        0 -0.5px 0 white,
+        0 0.5px 0 white;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -70,7 +87,7 @@ nav li:not(:last-child)::after {
 
 nav a {
     text-decoration: none;
-    color: #222;
+    color: #000;
     font-size: 1.1rem;
     transition: opacity .2s;
     -webkit-text-stroke: 1px white;
