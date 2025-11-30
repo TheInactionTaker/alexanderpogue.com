@@ -1,0 +1,140 @@
+/* -------------------------------------------------------
+   RESET & BASE
+------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Georgia", "Times New Roman", serif;
+    background: #e3e0dc; /* light grey-beige tone from mockup */
+    color: #111;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* -------------------------------------------------------
+   HEADER / NAV
+------------------------------------------------------- */
+
+header {
+    width: 100%;
+    background: #dfdbd4; /* warm gray bar */
+    border-bottom: 2px solid rgba(0,0,0,0.15);
+}
+
+.nav-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 18px 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-size: 1.1rem;
+    transition: opacity .2s;
+}
+
+nav a:hover {
+    opacity: 0.6;
+}
+
+/* -------------------------------------------------------
+   HERO SECTION
+------------------------------------------------------- */
+
+.hero {
+    width: 100%;
+    height: 520px;
+    background-image: url("../img/hero_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.7)
+    );
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: "Trajan Pro", "Cinzel", serif; /* mockup-style engraved lettering */
+    letter-spacing: 6px;
+    color: #d6b300; /* gold-ish yellow from Forest's Bane title */
+    text-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.hero-subtitle {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 12px 22px;
+    background: #d6b300;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: background 0.2s;
+}
+
+.button:hover {
+    background: #a58800;
+}
+
+/* -------------------------------------------------------
+   FOOTER
+------------------------------------------------------- */
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #444;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
