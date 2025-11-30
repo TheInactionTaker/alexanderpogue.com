@@ -137,47 +137,44 @@ nav a:hover {
     background-position: center;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 
 .hero-overlay {
     position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom,
-        rgba(0, 0, 0, 0.25),
-        rgba(0, 0, 0, 0.7)
-    );
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px; /* Adjust height as needed for the black bar */
+    background: rgba(0, 0, 0, 0.6); /* Solid black, semi-transparent */
 }
 
 .hero-content {
     position: relative;
+    z-index: 1;
     text-align: center;
     color: #fff;
     max-width: 900px;
-    padding: 20px;
-}
-
-.hero-title {
-    font-size: 5rem;
-    font-weight: 700;
-    font-family: "Trajan Pro", "Cinzel", serif; /* mockup-style engraved lettering */
-    letter-spacing: 6px;
-    color: #d6b300; /* gold-ish yellow from Forest's Bane title */
-    text-shadow: 0 0 8px rgba(0,0,0,0.5);
+    width: 100%;
+    padding: 13px 20px;
 }
 
 .hero-subtitle {
-    margin-top: 1.5rem;
     font-size: 1rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    opacity: 0.8;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
 }
 
 .button {
     display: inline-block;
-    margin-top: 1.5rem;
     padding: 12px 22px;
     background: #d6b300;
     color: #fff;
@@ -186,6 +183,7 @@ nav a:hover {
     font-weight: bold;
     border-radius: 3px;
     transition: background 0.2s;
+    text-transform: none;
 }
 
 .button:hover {
