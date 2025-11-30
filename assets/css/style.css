@@ -24,7 +24,7 @@ body {
 header {
     width: 100%;
     background: #dfdbd4; /* warm gray bar */
-    border-bottom: 2px solid rgba(0,0,0,0.15);
+    border-bottom: 2px solid #000;
 }
 
 .nav-container {
@@ -98,7 +98,7 @@ nav a:hover {
     font-weight: 700;
     font-family: "Trajan Pro", "Cinzel", serif; /* mockup-style engraved lettering */
     letter-spacing: 6px;
-    color: #D6B3B9; /* gold-ish yellow from Forest's Bane title */
+    color: #d6b300; /* gold-ish yellow from Forest's Bane title */
     text-shadow: 0 0 8px rgba(0,0,0,0.5);
 }
 
