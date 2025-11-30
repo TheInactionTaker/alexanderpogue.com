@@ -87,7 +87,7 @@ nav li:not(:last-child)::after {
     content: '';
     width: 1px;
     height: 20px;
-    background-color: #999;
+    background-color: #878683;
     margin: 0 1.5rem;
 }
 
@@ -146,7 +146,7 @@ nav a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 200px; /* Adjust height as needed for the black bar */
+    height: 180px; /* Adjust height as needed for the black bar */
     background: rgba(0, 0, 0, 0.6); /* Solid black, semi-transparent */
 }
 
@@ -157,20 +157,24 @@ nav a:hover {
     color: #fff;
     max-width: 900px;
     width: 100%;
-    padding: 13px 20px;
+    padding: 30px 20px;
+    line-height: 1;
 }
 
 .hero-subtitle {
     font-size: 1rem;
+    color: #878683;
     letter-spacing: 1px;
     text-transform: uppercase;
+    margin-bottom: 0.2rem;
 }
 
 .hero-title {
     font-size: 3.5rem;
     font-weight: 600;
     letter-spacing: 2px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
 }
 
 .button {
@@ -197,7 +201,7 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 40px 0;
-    color: #444;
+    color: #878683;
     font-size: 0.9rem;
     opacity: 0.7;
 }
