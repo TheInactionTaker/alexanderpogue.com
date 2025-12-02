@@ -199,17 +199,17 @@ nav a:hover {
    ABOUT SECTION
 ------------------------------------------------------- */
 
-.about-section {
+.about-section, .project-body {
     background: #e3e0dc;
     padding: 80px 24px;
 }
 
-.about-section .container {
+.about-section .container, .project-body .container {
     max-width: 900px;
     margin: 0 auto;
 }
 
-.about-section h2 {
+.about-section h2, .project-body h2 {
     font-family: "Underdog", system-ui;
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -219,16 +219,16 @@ nav a:hover {
     font-weight: 700;
 }
 
-.about-content {
+.about-content, .project-content {
     font-size: 1.1rem;
     line-height: 1.8;
 }
 
-.about-content p {
+.about-content p, .project-content p {
     margin-bottom: 1.5rem;
 }
 
-.about-content p:last-child {
+.about-content p:last-child, .project-content p:last-child {
     margin-bottom: 0;
 }
 
