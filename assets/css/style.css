@@ -11,6 +11,7 @@ html {
     font-family: "Epunda Slab", "Georgia", "Times New Roman", serif;
     background: #e3e0dc; /* light grey-beige tone from mockup */
     color: #111;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
 }
 
 body {
@@ -192,6 +193,41 @@ nav a:hover {
 
 .button:hover {
     background: #a58800;
+}
+
+/* -------------------------------------------------------
+   ABOUT SECTION
+------------------------------------------------------- */
+
+.about-section {
+    background: #e3e0dc;
+    padding: 80px 24px;
+}
+
+.about-section .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
 }
 
 /* -------------------------------------------------------
