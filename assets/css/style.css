@@ -147,7 +147,7 @@ nav a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 180px; /* Adjust height as needed for the black bar */
+    height: 160px; /* Adjust height as needed for the black bar */
     background: rgba(0, 0, 0, 0.6); /* Solid black, semi-transparent */
 }
 
@@ -343,7 +343,7 @@ footer {
     }
 
     .hero-overlay {
-        height: 140px;
+        height: 120px;
     }
 
     .hero-content {
