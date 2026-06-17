@@ -9,7 +9,7 @@
 
 html {
     font-family: "Epunda Slab", "Georgia", "Times New Roman", serif;
-    background: #e3e0dc; /* light grey-beige tone from mockup */
+    background: #D2C9BD; /* light grey-beige tone from mockup */
     color: #111;
     scroll-behavior: smooth; /* Smooth scrolling for anchor links */
 }
@@ -24,7 +24,7 @@ body {
 
 header {
     width: 100%;
-    background: #dfdbd4; /* warm gray bar */
+    background: #DEDCD6; /* warm gray bar */
     border-bottom: 2px solid #000;
 }
 
@@ -200,7 +200,7 @@ nav a:hover {
 ------------------------------------------------------- */
 
 .about-section, .project-body {
-    background: #e3e0dc;
+    background: #D2C9BD;
     padding: 80px 24px;
 }
 
