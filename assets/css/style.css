@@ -366,13 +366,14 @@ a.project-card:hover {
     padding: 22px 20px;
 }
 
+/* Six Caps ships one weight and renders lowercase as small caps, so the
+   title needs no weight or small-caps declarations of its own */
 .project-search-title {
-    font-size: 2rem;
-    font-weight: 700;
-    font-variant: small-caps;
-    font-stretch: condensed;
+    font-family: "Six Caps", "Arial Narrow", sans-serif;
+    font-weight: 400;
+    font-size: 3.6rem;
     letter-spacing: 1px;
-    line-height: 1.1;
+    line-height: 1;
     text-align: center;
     color: #57534A;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.45);
@@ -597,7 +598,7 @@ footer {
     }
 
     .project-search-title {
-        font-size: 1.7rem;
+        font-size: 3rem;
     }
 
     .filter-group {
