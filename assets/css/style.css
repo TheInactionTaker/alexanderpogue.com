@@ -18,6 +18,11 @@ body {
     line-height: 1.6;
 }
 
+.home-page,
+.home-page footer {
+    background: #E5E5E2;
+}
+
 /* -------------------------------------------------------
    HEADER / NAV
 ------------------------------------------------------- */
@@ -196,20 +201,89 @@ nav a:hover {
 }
 
 /* -------------------------------------------------------
-   ABOUT SECTION
+   INTRO + ABOUT (below hero)
 ------------------------------------------------------- */
 
-.about-section, .project-body {
+.intro-about {
+    background: #E5E5E2;
+    padding: 88px 24px 110px;
+}
+
+.intro-about .container {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.charcoal-rule {
+    height: 18px;
+    width: 100%;
+    background: url("../img/charcoal-divider.svg") center / 100% 100% no-repeat;
+}
+
+.welcome-block {
+    text-align: center;
+    padding: 2.6rem 12px 2.4rem;
+}
+
+.welcome-heading {
+    font-family: "Underdog", system-ui;
+    font-size: clamp(1.55rem, 3.2vw, 2.15rem);
+    font-weight: 400;
+    line-height: 1.45;
+    letter-spacing: 0.5px;
+    color: #1a1a1a;
+}
+
+.welcome-tagline {
+    margin-top: 1.15rem;
+    font-family: system-ui, "Segoe UI", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: #2a2a2a;
+}
+
+.about-section {
+    text-align: center;
+    padding-top: 4.25rem;
+}
+
+.about-section h2 {
+    font-family: "Underdog", system-ui;
+    font-size: clamp(3.2rem, 7vw, 4.6rem);
+    margin-bottom: 2.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1;
+    color: #111;
+}
+
+.about-content {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 1.18rem;
+    line-height: 1.7;
+}
+
+.about-content p {
+    margin-bottom: 1.45rem;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+.project-body {
     background: #D2C9BD;
     padding: 80px 24px;
 }
 
-.about-section .container, .project-body .container {
+.project-body .container {
     max-width: 900px;
     margin: 0 auto;
 }
 
-.about-section h2, .project-body h2 {
+.project-body h2 {
     font-family: "Underdog", system-ui;
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -219,16 +293,16 @@ nav a:hover {
     font-weight: 700;
 }
 
-.about-content, .project-content {
+.project-content {
     font-size: 1.1rem;
     line-height: 1.8;
 }
 
-.about-content p, .project-content p {
+.project-content p {
     margin-bottom: 1.5rem;
 }
 
-.about-content p:last-child, .project-content p:last-child {
+.project-content p:last-child {
     margin-bottom: 0;
 }
 
@@ -580,12 +654,20 @@ footer {
         font-size: 2.5rem;
     }
 
+    .intro-about {
+        padding: 64px 20px 80px;
+    }
+
+    .welcome-block {
+        padding: 2rem 8px 1.85rem;
+    }
+
     .about-section {
-        padding: 60px 20px;
+        padding-top: 3.25rem;
     }
 
     .about-content {
-        font-size: 1rem;
+        font-size: 1.05rem;
     }
 
     /* Sidebar has nowhere to sit, so it becomes a band above the grid */
@@ -673,17 +755,29 @@ footer {
         font-size: 0.9rem;
     }
 
+    .intro-about {
+        padding: 48px 16px 64px;
+    }
+
+    .welcome-block {
+        padding: 1.6rem 4px 1.5rem;
+    }
+
+    .welcome-tagline {
+        font-size: 0.88rem;
+    }
+
     .about-section {
-        padding: 40px 16px;
+        padding-top: 2.6rem;
     }
 
     .about-section h2 {
-        font-size: 2rem;
+        margin-bottom: 1.5rem;
     }
 
     .about-content {
-        font-size: 0.95rem;
-        line-height: 1.7;
+        font-size: 0.98rem;
+        line-height: 1.65;
     }
 
     .project-search-title {
