@@ -430,6 +430,92 @@ a.project-card:hover {
 }
 
 /* -------------------------------------------------------
+   INDIVIDUAL PROJECT PAGE
+------------------------------------------------------- */
+
+.project-page {
+    background: #DEDCD6;
+}
+
+.project-main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 24px 0;
+}
+
+.project-title {
+    font-family: "Six Caps", "Arial Narrow", sans-serif;
+    font-weight: 400;
+    font-size: clamp(4rem, 11vw, 7rem);
+    letter-spacing: 2px;
+    line-height: 1;
+    text-align: center;
+}
+
+.project-lede {
+    max-width: 480px;
+    margin: 2.5rem auto 0;
+    text-align: center;
+    font-size: 1.35rem;
+    line-height: 1.5;
+}
+
+.project-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 4.5rem;
+}
+
+.feature-shot {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.feature-text {
+    font-size: 1.2rem;
+    line-height: 1.55;
+}
+
+.project-feature--flipped .feature-text {
+    text-align: right;
+}
+
+.project-cta {
+    margin-top: 5.5rem;
+    text-align: center;
+}
+
+.project-cta a {
+    color: #505A66;
+    font-size: 1.55rem;
+    text-decoration: underline;
+}
+
+.project-cta a:hover {
+    color: #2F3740;
+}
+
+/* The crown's top is transparent so it overlaps the page background, and its
+   bottom is solid black so anything below can continue the black seamlessly.
+   The negative margin makes it overlap the CTA, so it must not absorb clicks. */
+.project-crown {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: -4%;
+    pointer-events: none;
+}
+
+.project-page footer {
+    background: #000;
+    color: #8F8C84;
+    margin-top: -1px;
+}
+
+/* -------------------------------------------------------
    FOOTER
 ------------------------------------------------------- */
 
@@ -612,6 +698,38 @@ footer {
     .project-grid {
         grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
         gap: 14px;
+    }
+
+    .project-main {
+        padding: 40px 16px 0;
+    }
+
+    .project-lede {
+        font-size: 1.15rem;
+    }
+
+    .feature-text {
+        font-size: 1.05rem;
+    }
+
+    .project-cta a {
+        font-size: 1.3rem;
+    }
+
+    .project-feature {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        margin-top: 3rem;
+    }
+
+    /* Stacked, both rows read image-then-text */
+    .project-feature--flipped .feature-text {
+        order: 2;
+        text-align: left;
+    }
+
+    .project-cta {
+        margin-top: 3.5rem;
     }
 
     footer {
