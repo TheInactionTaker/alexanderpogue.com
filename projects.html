@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Alexander Pogue</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Underdog&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="projects-page">
+
+<header>
+    <div class="nav-container">
+        <div class="site-title"><a href="/index.html">Alexander Pogue</a></div>
+        <div class="nav-right">
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/projects.html" aria-current="page">Projects</a></li>
+                    <li><a href="/index.html#about">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="signature-logo">
+                <img src="/assets/img/signature.png" alt="Alexander Pogue Signature">
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="projects-layout">
+
+    <main class="project-grid-area">
+        <div class="project-grid">
+
+            <article class="project-card" data-type="game" data-released="false">
+                <span class="card-badge" aria-hidden="true"></span>
+                <img class="card-thumb" src="/assets/img/fenton_moores_management_framework_thumbnail.png" alt="Fenton Moore's Management Framework">
+                <div class="card-info">
+                    <h3 class="card-title">Fenton Moore's Management Framework</h3>
+                    <div class="card-meta">
+                        <span class="card-genre">Mystery/Strategy</span>
+                        <span class="card-date">MM/YYYY</span>
+                    </div>
+                </div>
+            </article>
+
+            <a class="project-card" href="/projects/forests_bane.html" data-type="game" data-released="true">
+                <span class="card-badge" aria-hidden="true"></span>
+                <img class="card-thumb" src="/assets/img/forests_bane_thumbnail.png" alt="Forest's Bane">
+                <div class="card-info">
+                    <h3 class="card-title">Forest's Bane</h3>
+                    <div class="card-meta">
+                        <span class="card-genre">Survival Horror / Strategy</span>
+                        <span class="card-date">MM/YYYY</span>
+                    </div>
+                </div>
+            </a>
+
+            <article class="project-card" data-type="game" data-released="false">
+                <span class="card-badge" aria-hidden="true"></span>
+                <img class="card-thumb" src="/assets/img/vince_montague_on_the_air_thumbnail.png" alt="Vince Montague: On the Air">
+                <div class="card-info">
+                    <h3 class="card-title">Vince Montague: On the Air</h3>
+                    <div class="card-meta">
+                        <span class="card-genre">Fighting Game</span>
+                        <span class="card-date">MM/YYYY</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-type="game" data-released="false">
+                <span class="card-badge" aria-hidden="true"></span>
+                <div class="card-thumb card-thumb--empty" aria-hidden="true"></div>
+                <div class="card-info">
+                    <h3 class="card-title">How the Winds Change</h3>
+                    <div class="card-meta">
+                        <span class="card-genre">Survival/Mystery</span>
+                        <span class="card-date">MM/YYYY</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-type="game" data-released="false">
+                <span class="card-badge" aria-hidden="true"></span>
+                <div class="card-thumb card-thumb--empty" aria-hidden="true"></div>
+                <div class="card-info">
+                    <h3 class="card-title">Quark</h3>
+                    <div class="card-meta">
+                        <span class="card-genre">Platformer</span>
+                        <span class="card-date">MM/YYYY</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-type="game" data-released="false">
+                <span class="card-badge" aria-hidden="true"></span>
+                <div class="card-thumb card-thumb--empty" aria-hidden="true"></div>
+                <div class="card-info">
+                    <h3 class="card-title">Sunken Eyes</h3>
+                    <div class="card-meta">
+                        <span class="card-genre">Survival Horror</span>
+                        <span class="card-date">MM/YYYY</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="project-grid-empty" id="project-grid-empty" hidden>No projects match the current filters.</p>
+    </main>
+
+    <aside class="project-search">
+        <h2 class="project-search-title">Project Search</h2>
+
+        <div class="filter-group">
+            <label class="filter-option">
+                <input type="checkbox" data-filter="unreleased">
+                <span>Hide Unreleased Projects</span>
+            </label>
+            <label class="filter-option">
+                <input type="checkbox" data-filter="game">
+                <span>Hide Games</span>
+            </label>
+            <label class="filter-option">
+                <input type="checkbox" data-filter="webcomic">
+                <span>Hide Webcomics</span>
+            </label>
+            <label class="filter-option">
+                <input type="checkbox" data-filter="animation">
+                <span>Hide Animation</span>
+            </label>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    © 2025 Alexander Pogue
+</footer>
+
+<script src="/assets/js/projects.js"></script>
+</body>
+</html>
