@@ -533,6 +533,28 @@ a.project-card:hover {
     line-height: 1.5;
 }
 
+/* Single centred screenshot, for pages with one hero image instead of
+   alternating feature rows */
+.project-shot {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    margin: 4.5rem auto 0;
+}
+
+.project-blurb {
+    max-width: 680px;
+    margin: 4.5rem auto 0;
+    text-align: center;
+    font-size: 1.35rem;
+    line-height: 1.55;
+}
+
+.project-blurb p + p {
+    margin-top: 1.5rem;
+}
+
 .project-feature {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -801,6 +823,15 @@ footer {
     }
 
     .project-lede {
+        font-size: 1.15rem;
+    }
+
+    .project-shot,
+    .project-blurb {
+        margin-top: 2.75rem;
+    }
+
+    .project-blurb {
         font-size: 1.15rem;
     }
 
