@@ -506,11 +506,27 @@ a.project-card:hover {
    INDIVIDUAL PROJECT PAGE
 ------------------------------------------------------- */
 
+/* Each project's crown fades into a solid colour at its base, and the footer
+   continues that colour so the two meet without a seam. */
+/* Short pages would otherwise end above the fold and let the html background
+   show below the footer, so the layout always fills the viewport. */
 .project-page {
+    --crown-base: #000;
+    --crown-base-text: #8F8C84;
     background: #DEDCD6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-page--vince {
+    --crown-base: #734D3E;
+    --crown-base-text: #D3BCB2;
 }
 
 .project-main {
+    flex: 1;
+    width: 100%;
     max-width: 900px;
     margin: 0 auto;
     padding: 60px 24px 0;
@@ -598,6 +614,7 @@ a.project-card:hover {
    The negative margin makes it overlap the CTA, so it must not absorb clicks. */
 .project-crown {
     display: block;
+    flex-shrink: 0;
     width: 100%;
     height: auto;
     margin-top: -4%;
@@ -607,8 +624,8 @@ a.project-card:hover {
 /* The base footer's opacity would wash the black out against the page behind
    it, breaking the seam with the crown, so the dimming moves into the color. */
 .project-page footer {
-    background: #000;
-    color: #8F8C84;
+    background: var(--crown-base);
+    color: var(--crown-base-text);
     opacity: 1;
     margin-top: -1px;
 }
