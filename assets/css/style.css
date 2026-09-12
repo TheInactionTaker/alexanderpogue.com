@@ -778,6 +778,13 @@ a.project-card:hover {
     background: #E5E5E2;
 }
 
+.contact-sheet {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .contact-main {
     flex: 1;
     width: 100%;
@@ -785,6 +792,35 @@ a.project-card:hover {
     margin: 0 auto;
     padding: 88px 24px 96px;
     text-align: center;
+}
+
+/* Parlor wallpaper in the side gutters, framed by the header rule and a
+   matching footer rule. Only when there is room for a proper stripe column. */
+@media (min-width: 1024px) {
+    .contact-page {
+        --parlor-wallpaper-width: clamp(9.5rem, 16.4vw, 13.5rem);
+        background-color: #E5E5E2;
+        background-image: url("../img/parlor_wallpaper.png");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .contact-sheet {
+        width: calc(100% - (var(--parlor-wallpaper-width) * 2));
+        margin: 0 auto;
+        background: #E5E5E2;
+        border-left: 2px solid #000;
+        border-right: 2px solid #000;
+    }
+
+    .contact-page footer {
+        /* Footer opacity would wash the new top rule to grey. */
+        opacity: 1;
+        color: #a3a29f;
+        border-top: 2px solid #000;
+        background: #E5E5E2;
+    }
 }
 
 .contact-intro {
