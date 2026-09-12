@@ -635,6 +635,7 @@ a.project-card:hover {
 ------------------------------------------------------- */
 
 .gallery-page {
+    --gallery-gap: 1.35rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -643,6 +644,13 @@ a.project-card:hover {
 
 .gallery-page footer {
     background: #E5E5E2;
+}
+
+.gallery-sheet {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .visually-hidden {
@@ -666,7 +674,6 @@ a.project-card:hover {
 }
 
 .gallery-board {
-    --gallery-gap: 1.35rem;
     display: flex;
     flex-direction: column;
     gap: var(--gallery-gap);
@@ -795,15 +802,21 @@ a.project-card:hover {
 }
 
 /* Parlor wallpaper in the side gutters, framed by the header rule and a
-   matching footer rule. Only when there is room for a proper stripe column. */
+   matching footer rule. Only when there is room for a proper stripe column.
+   Fixed to the viewport so the lighting does not have to tile on long pages. */
 @media (min-width: 1024px) {
-    .contact-page {
-        --parlor-wallpaper-width: clamp(9.5rem, 16.4vw, 13.5rem);
+    .contact-page,
+    .gallery-page {
         background-color: #E5E5E2;
         background-image: url("../img/parlor_wallpaper.png");
         background-size: 100% 100%;
         background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .contact-page {
+        --parlor-wallpaper-width: clamp(9.5rem, 16.4vw, 13.5rem);
     }
 
     .contact-sheet {
@@ -814,7 +827,22 @@ a.project-card:hover {
         border-right: 2px solid #000;
     }
 
-    .contact-page footer {
+    .gallery-sheet {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #E5E5E2;
+        border-left: 2px solid #000;
+        border-right: 2px solid #000;
+    }
+
+    .gallery-page .gallery-main {
+        max-width: none;
+        padding-left: var(--gallery-gap);
+        padding-right: var(--gallery-gap);
+    }
+
+    .contact-page footer,
+    .gallery-page footer {
         /* Footer opacity would wash the new top rule to grey. */
         opacity: 1;
         color: #a3a29f;
@@ -1107,7 +1135,7 @@ footer {
         padding: 24px 16px 48px;
     }
 
-    .gallery-board {
+    .gallery-page {
         --gallery-gap: 1rem;
     }
 
