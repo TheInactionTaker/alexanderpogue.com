@@ -764,6 +764,97 @@ a.project-card:hover {
 }
 
 /* -------------------------------------------------------
+   CONTACT PAGE
+------------------------------------------------------- */
+
+.contact-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #E5E5E2;
+}
+
+.contact-page footer {
+    background: #E5E5E2;
+}
+
+.contact-main {
+    flex: 1;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 88px 24px 96px;
+    text-align: center;
+}
+
+.contact-intro {
+    max-width: 18.5em;
+    margin: 0 auto;
+    font-size: 1.28rem;
+    line-height: 1.5;
+}
+
+.parlor-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin: 3.6rem 0 1.45rem;
+}
+
+.parlor-brand img {
+    display: block;
+    width: 118px;
+    height: 118px;
+}
+
+.parlor-brand h1 {
+    font-family: "Underdog", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(3.4rem, 8.5vw, 4.75rem);
+    letter-spacing: 1px;
+    line-height: 1;
+    color: #000;
+    -webkit-text-stroke: 1px white;
+    paint-order: stroke fill;
+    text-shadow:
+        -0.5px -0.5px 0 white,
+        0.5px -0.5px 0 white,
+        -0.5px 0.5px 0 white,
+        0.5px 0.5px 0 white,
+        -0.5px 0 0 white,
+        0.5px 0 0 white,
+        0 -0.5px 0 white,
+        0 0.5px 0 white;
+}
+
+.contact-copy {
+    max-width: 23em;
+    margin: 2.5rem auto 0;
+    font-size: 1.22rem;
+    line-height: 1.5;
+}
+
+.contact-copy p + p {
+    margin-top: 1.6rem;
+}
+
+.contact-cta {
+    margin-top: 4.4rem;
+}
+
+.contact-cta a {
+    color: #505A66;
+    font-size: 1.35rem;
+    text-decoration: underline;
+}
+
+.contact-cta a:hover {
+    color: #2F3740;
+}
+
+/* -------------------------------------------------------
    FOOTER
 ------------------------------------------------------- */
 
@@ -866,6 +957,10 @@ footer {
 
     .gallery-main {
         padding: 36px 20px 56px;
+    }
+
+    .contact-main {
+        padding: 56px 20px 72px;
     }
 }
 
@@ -986,6 +1081,38 @@ footer {
 
     .gallery-item {
         flex: none;
+    }
+
+    .contact-main {
+        padding: 40px 16px 64px;
+    }
+
+    .contact-intro {
+        font-size: 1.1rem;
+    }
+
+    .parlor-brand {
+        flex-wrap: wrap;
+        gap: 0.85rem;
+        margin: 2.6rem 0 1.1rem;
+    }
+
+    .parlor-brand img {
+        width: 84px;
+        height: 84px;
+    }
+
+    .contact-copy {
+        font-size: 1.08rem;
+        margin-top: 1.85rem;
+    }
+
+    .contact-cta {
+        margin-top: 2.75rem;
+    }
+
+    .contact-cta a {
+        font-size: 1.2rem;
     }
 
     .project-main {
