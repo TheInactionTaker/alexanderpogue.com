@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — Alexander Pogue</title>
+    <link rel="canonical" href="https://alexanderpogue.com/gallery">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Six+Caps&family=Underdog&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" href="/assets/img/site_favicon-no_bg-512.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="/assets/img/site_favicon-with_bg-180.png">
+</head>
+<body class="gallery-page">
+
+<header>
+    <div class="nav-container">
+        <div class="site-title"><a href="/">Alexander Pogue</a></div>
+        <div class="nav-right">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/gallery" aria-current="page">Gallery</a></li>
+                    <li><a href="/#about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="signature-logo">
+                <img src="/assets/img/signature.png" alt="Alexander Pogue Signature">
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="gallery-main">
+    <h1 class="visually-hidden">Gallery</h1>
+
+    <div class="gallery-board">
+        <div class="gallery-row">
+            <a class="gallery-item" href="/assets/img/gallery/nyx.png" style="--ratio: 0.637" data-title="Submerged" aria-label="Submerged">
+                <img src="/assets/img/gallery/nyx.webp" width="1250" height="1963" alt="A figure standing underwater with glowing eyes and hair drifting upward" fetchpriority="high">
+            </a>
+            <a class="gallery-item" href="/assets/img/gallery/crux-jones.png" style="--ratio: 0.696" data-title="Crux of the Lost - Jones" aria-label="Crux of the Lost - Jones">
+                <img src="/assets/img/gallery/crux-jones.webp" width="867" height="1246" alt="Crux of the Lost Jones, a slug man." fetchpriority="high">
+            </a>
+        </div>
+
+        <div class="gallery-row">
+            <a class="gallery-item" href="/assets/img/gallery/sunken_eyes-hallway.png" data-title="Sunken Eyes" aria-label="Sunken Eyes">
+                <img src="/assets/img/gallery/sunken_eyes-hallway.webp" width="1920" height="860" alt="Sunken Eyes title over a dark red industrial hallway">
+            </a>
+        </div>
+
+        <div class="gallery-row">
+            <a class="gallery-item" href="/assets/img/gallery/quark-argentine_above.png" style="--ratio: 1.778" data-title="Quark - Argentine" aria-label="Quark - Argentine">
+                <img src="/assets/img/gallery/quark-argentine_above.webp" width="1920" height="1080" alt="A man in a long coat standing in a shaft of light">
+            </a>
+            <a class="gallery-item" href="/assets/img/gallery/COOLERGUY.png" style="--ratio: 0.562" data-title="Detective Shades" aria-label="Detective Shades">
+                <img src="/assets/img/gallery/COOLERGUY.webp" width="379" height="674" alt="A stylized man with sunglasses and suspenders against red geometry">
+            </a>
+        </div>
+
+        <div class="gallery-row">
+            <a class="gallery-item" href="/assets/img/gallery/htwc-gang.png" data-title="How the Winds Change - Big Things Are Happening In Northpass" aria-label="How the Winds Change - Big Things Are Happening In Northpass">
+                <img src="/assets/img/gallery/htwc-gang.webp" width="3618" height="2248" alt="A group of soldiers gathered before a train" loading="lazy">
+            </a>
+        </div>
+
+        <div class="gallery-row">
+            <a class="gallery-item" href="/assets/img/gallery/forests_bane-cameos.png" data-title="Forest's Bane - Cameos" aria-label="Forest's Bane - Cameos">
+                <img src="/assets/img/gallery/forests_bane-cameos.webp" width="3832" height="996" alt="Six character portraits from Forest's Bane" loading="lazy">
+            </a>
+        </div>
+    </div>
+</main>
+
+<dialog class="gallery-lightbox" id="gallery-lightbox" aria-label="Artwork viewer">
+    <div class="gallery-lightbox-frame">
+        <img class="gallery-lightbox-image" alt="">
+        <p class="gallery-lightbox-caption" hidden></p>
+    </div>
+    <form method="dialog">
+        <button type="submit" class="gallery-lightbox-close" aria-label="Close">&times;</button>
+    </form>
+</dialog>
+
+<footer>
+    © 2026 Alexander Pogue
+</footer>
+
+<script src="/assets/js/gallery.js"></script>
+</body>
+</html>
