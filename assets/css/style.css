@@ -796,7 +796,7 @@ a.project-card:hover {
 
 .parlor-brand {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     gap: 1.2rem;
     margin: 3.6rem 0 1.45rem;
@@ -814,19 +814,19 @@ a.project-card:hover {
     font-style: normal;
     font-size: clamp(3.4rem, 8.5vw, 4.75rem);
     letter-spacing: 1px;
-    line-height: 1;
+    line-height: 0.8;
     color: #000;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 2px white;
     paint-order: stroke fill;
     text-shadow:
-        -0.5px -0.5px 0 white,
-        0.5px -0.5px 0 white,
-        -0.5px 0.5px 0 white,
-        0.5px 0.5px 0 white,
-        -0.5px 0 0 white,
-        0.5px 0 0 white,
-        0 -0.5px 0 white,
-        0 0.5px 0 white;
+        -2px -2px 0 white,
+        2px -2px 0 white,
+        -2px 2px 0 white,
+        2px 2px 0 white,
+        -2px 0 0 white,
+        2px 0 0 white,
+        0 -2px 0 white,
+        0 2px 0 white;
 }
 
 .contact-copy {
